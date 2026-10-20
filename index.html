@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -198,8 +199,8 @@ section {
   color: #987580;
 }
 
+/* NOSSO CÉU ESTRELADO */
 
-/* NOSSO CÉU ESTRELADO ✨ */
 .sky-section {
   position: relative;
   overflow: hidden;
@@ -324,7 +325,7 @@ section {
   .sky-message { padding: 20px 16px; }
 }
 
-/* ===== NOSSA LISTA DE SONHOS ===== */
+/* NOSSA LISTA DE SONHOS */
 
 .dreams-section {
   position: relative;
@@ -507,24 +508,14 @@ section {
 }
 
 @media (max-width: 600px) {
-  .dreams-section {
-    padding: 55px 16px;
-  }
-
-  .dream-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dream-progress-top {
-    font-size: 12px;
-  }
+  .dreams-section { padding: 55px 16px; }
+  .dream-grid { grid-template-columns: 1fr; }
+  .dream-progress-top { font-size: 12px; }
 }
 
 /* FOTOS */
 
-.gallery-section {
-  background: #fff9f5;
-}
+.gallery-section { background: #fff9f5; }
 
 .gallery {
   display: grid;
@@ -607,112 +598,6 @@ section {
   font-size: 12px;
 }
 
-
-/* QUIZ DO CASAL 💗 */
-.quiz-section {
-  background: #fff0f4;
-}
-
-.quiz-card {
-  max-width: 650px;
-  margin: 35px auto 0;
-  padding: clamp(22px, 5vw, 40px);
-  border-radius: 24px;
-  background: white;
-  box-shadow: 0 15px 45px #a7466512;
-}
-
-.quiz-progress {
-  height: 7px;
-  background: #f8e1e8;
-  border-radius: 20px;
-  overflow: hidden;
-  margin-bottom: 28px;
-}
-
-.quiz-progress-fill {
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, #e88ca5, #a74665);
-  transition: width .4s;
-}
-
-.quiz-count {
-  color: #a74665;
-  font-size: .8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.quiz-question {
-  font: 500 clamp(1.5rem, 5vw, 2.1rem)/1.4 'Playfair Display', serif;
-  margin: 18px 0 25px;
-}
-
-.quiz-options {
-  display: grid;
-  gap: 12px;
-}
-
-.quiz-option {
-  width: 100%;
-  padding: 16px;
-  text-align: left;
-  border: 1px solid #f1dce3;
-  background: #fffafc;
-  border-radius: 14px;
-  color: #633c49;
-  cursor: pointer;
-  transition: .2s;
-}
-
-.quiz-option:hover:not(:disabled) {
-  border-color: #d77d9b;
-  transform: translateY(-2px);
-}
-
-.quiz-option:disabled { cursor: default; }
-
-.quiz-option.correct {
-  background: #e9f8ed;
-  border-color: #8cc99b;
-}
-
-.quiz-option.wrong {
-  background: #fff0f0;
-  border-color: #e9a0a0;
-}
-
-.quiz-feedback {
-  min-height: 48px;
-  margin: 20px 0 10px;
-  color: #906575;
-  line-height: 1.7;
-}
-
-.quiz-result {
-  text-align: center;
-  padding: 12px 0;
-}
-
-.quiz-result .big-heart {
-  font-size: 4rem;
-  color: #d77d9b;
-  animation: heartbeat 1.7s infinite;
-}
-
-.quiz-result h3 {
-  font: 400 2.5rem 'Great Vibes', cursive;
-  color: #a74665;
-}
-
-.quiz-result p {
-  line-height: 1.9;
-  color: #805967;
-}
-
-.quiz-hidden { display: none; }
-
 .moment time {
   color: var(--deep);
   font-size: .78rem;
@@ -733,9 +618,7 @@ section {
 
 /* VÍDEO E MÚSICA */
 
-.media-section {
-  background: #f9e9ed;
-}
+.media-section { background: #f9e9ed; }
 
 .video-frame {
   max-width: 800px;
@@ -827,12 +710,9 @@ section {
   margin-top: 28px;
 }
 
-.letter-action { text-align: center; margin-top: 28px; }
+/* 20 MOTIVOS */
 
-/* 20 MOTIVOS 💗 */
-.reasons-section {
-  background: #fff9f5;
-}
+.reasons-section { background: #fff9f5; }
 
 .reasons-grid {
   display: grid;
@@ -874,9 +754,7 @@ section {
   border-color: #e8a4b9;
 }
 
-.reason-card.opened .reason-number {
-  font-size: 1.5rem;
-}
+.reason-card.opened .reason-number { font-size: 1.5rem; }
 
 .reason-message {
   max-width: 650px;
@@ -968,7 +846,7 @@ footer {
 
 <body>
 
-<!-- ABERTURA: personalize os textos aqui -->
+<!-- ABERTURA -->
 <header class="hero" id="inicio">
   <div class="hero-content">
     <div class="hero-heart">♡</div>
@@ -986,7 +864,7 @@ footer {
 
 <main id="conteudo" hidden>
 
-<!-- CONTADOR: altere a data para o dia em que começaram a namorar -->
+<!-- CONTADOR -->
 <section class="counter-section">
   <div class="container reveal">
     <div class="eyebrow">Desde que nossas histórias se encontraram</div>
@@ -1006,7 +884,7 @@ footer {
   </div>
 </section>
 
-<!-- GALERIA: substitua as imagens pelos arquivos da pasta fotos -->
+<!-- GALERIA -->
 <section class="gallery-section">
   <div class="container">
     <div class="center reveal">
@@ -1047,7 +925,7 @@ footer {
   </div>
 </section>
 
-<!-- HISTÓRIA: troque as datas e os acontecimentos -->
+<!-- HISTÓRIA -->
 <section class="timeline-section">
   <div class="container">
     <div class="center reveal">
@@ -1117,8 +995,7 @@ footer {
   </div>
 </section>
 
-
-<!-- 20 MOTIVOS PELOS QUAIS EU TE AMO -->
+<!-- 20 MOTIVOS -->
 <section class="reasons-section" id="motivos">
   <div class="container">
     <div class="center reveal">
@@ -1143,8 +1020,7 @@ footer {
   </div>
 </section>
 
-
-<!-- NOSSO PRÓPRIO CÉU ESTRELADO -->
+<!-- NOSSO CÉU ESTRELADO -->
 <section class="sky-section" id="nosso-ceu">
   <div class="container">
     <div class="center sky-intro reveal">
@@ -1162,7 +1038,6 @@ footer {
 
     <div class="sky reveal" id="loveSky">
       <div class="sky-moon">☾</div>
-      <!-- As estrelas serão criadas pelo JavaScript -->
     </div>
 
     <div class="sky-message reveal" aria-live="polite">
@@ -1182,12 +1057,9 @@ footer {
   </div>
 </section>
 
-
-
 <!-- NOSSA LISTA DE SONHOS -->
 <section class="dreams-section" id="nossos-sonhos">
   <div class="dreams-container">
-
     <header class="dreams-heading">
       <div class="dreams-eyebrow">Nosso futuro, nossa história</div>
       <h2>O mundo é nosso, meu amor ✈️</h2>
@@ -1247,16 +1119,13 @@ footer {
       <p>
         Não quero apenas conhecer o mundo.
         Quero conhecer o mundo com você.
-        <br />
+        <br>
         <strong>Essa é só a primeira página da nossa história.</strong>
       </p>
       <small>Você, eu e todos os lugares que ainda vamos chamar de lembrança.</small>
     </div>
-
   </div>
 </section>
-<!-- FIM DA LISTA DE SONHOS -->
-
 
 <!-- CARTA -->
 <section class="letter-section">
@@ -1319,12 +1188,9 @@ Eu te amo. ♡</p>
 </main>
 
 <script>
-// ===================================================
-// PERSONALIZE A DATA DO INÍCIO DO RELACIONAMENTO
+// DATA DO INÍCIO DO RELACIONAMENTO
 // Formato: ano, mês (janeiro = 0), dia, hora, minuto
-// Exemplo: 14 de fevereiro de 2025, às 00:00
-// ===================================================
-
+const inicioNamoro = new Date(2026, 3, 9, 0, 0, 0);
 
 /* ===== FUNCIONAMENTO DA LISTA DE SONHOS ===== */
 
@@ -1392,9 +1258,7 @@ try {
 
 function criarCartoesDeSonhos() {
   Object.entries(listasDeSonhos).forEach(([categoria, sonhos]) => {
-    const container = document.getElementById(
-      `dreams-${categoria}`
-    );
+    const container = document.getElementById(`dreams-${categoria}`);
 
     if (!container) return;
 
@@ -1406,9 +1270,7 @@ function criarCartoesDeSonhos() {
 
       const cartao = document.createElement("button");
       cartao.type = "button";
-      cartao.className = "dream-card" +
-        (concluido ? " is-done" : "");
-
+      cartao.className = "dream-card" + (concluido ? " is-done" : "");
       cartao.setAttribute("aria-pressed", String(concluido));
 
       const caixa = document.createElement("span");
@@ -1495,10 +1357,7 @@ function atualizarProgressoDosSonhos() {
 
 criarCartoesDeSonhos();
 
-/* ==========================================
-   20 MOTIVOS PELOS QUAIS EU TE AMO 💕
-   Edite os textos para ficarem com a cara de vocês.
-========================================== */
+/* ===== 20 MOTIVOS PELOS QUAIS EU TE AMO ===== */
 
 const motivosAmor = [
   "Porque seu sorriso consegue melhorar o meu dia.",
@@ -1570,10 +1429,7 @@ motivosAmor.forEach((motivo, index) => {
   reasonsGrid.appendChild(card);
 });
 
-
-/* ==========================================
-   NOSSO PRÓPRIO CÉU ESTRELADO ✨
-========================================== */
+/* ===== NOSSO PRÓPRIO CÉU ESTRELADO ===== */
 
 const mensagensEstrelas = [
   {
@@ -1625,7 +1481,6 @@ const skyProgress = document.getElementById("skyProgress");
 
 const estrelasDescobertas = new Set();
 
-// Posições definidas para as estrelas ficarem bem distribuídas
 const posicoesEstrelas = [
   [10, 20], [24, 35], [38, 17], [54, 29], [70, 18],
   [86, 33], [17, 57], [34, 72], [51, 52], [68, 73]
@@ -1670,26 +1525,25 @@ posicoesEstrelas.forEach((posicao, index) => {
   loveSky.appendChild(estrela);
 });
 
+/* ===== CONTADOR DO RELACIONAMENTO ===== */
 
+const openBtn = document.getElementById("openBtn");
+const conteudo = document.getElementById("conteudo");
 
-
-const inicioNamoro = new Date(2026, 3, 9, 0, 0, 0);
-
-const openBtn = document.getElementById('openBtn');
-const conteudo = document.getElementById('conteudo');
-
-openBtn.addEventListener('click', () => {
+openBtn.addEventListener("click", () => {
   conteudo.hidden = false;
-  openBtn.textContent = 'Agora é só nosso ♡';
+  openBtn.textContent = "Agora é só nosso ♡";
   openBtn.disabled = true;
 
-  conteudo.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  conteudo.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
   setTimeout(() => {
-    document.getElementById('conteudo').scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-
+    conteudo.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }, 100);
+});
 
 function atualizarContador() {
   const agora = new Date();
@@ -1701,35 +1555,37 @@ function atualizarContador() {
   const minutos = Math.floor((totalSegundos % 3600) / 60);
   const segundos = totalSegundos % 60;
 
-  document.getElementById('days').textContent = dias;
-  document.getElementById('hours').textContent = String(horas).padStart(2, '0');
-  document.getElementById('minutes').textContent = String(minutos).padStart(2, '0');
-  document.getElementById('seconds').textContent = String(segundos).padStart(2, '0');
+  document.getElementById("days").textContent = dias;
+  document.getElementById("hours").textContent = String(horas).padStart(2, "0");
+  document.getElementById("minutes").textContent = String(minutos).padStart(2, "0");
+  document.getElementById("seconds").textContent = String(segundos).padStart(2, "0");
 }
 
 atualizarContador();
 setInterval(atualizarContador, 1000);
 
-// Animações conforme os elementos aparecem na tela
+/* ===== ANIMAÇÕES DE REVELAÇÃO ===== */
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+      entry.target.classList.add("visible");
       observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.12 });
 
-// Corações flutuando no fundo da abertura
-function criarCoracao() {
-  const heart = document.createElement('span');
-  heart.className = 'float-heart';
-  heart.textContent = ['♡', '♥', '❤'][Math.floor(Math.random() * 3)];
-  heart.style.left = Math.random() * 100 + '%';
-  heart.style.fontSize = (14 + Math.random() * 20) + 'px';
-  heart.style.animationDuration = (7 + Math.random() * 8) + 's';
+/* ===== CORAÇÕES FLUTUANDO ===== */
 
-  document.querySelector('.hero').appendChild(heart);
+function criarCoracao() {
+  const heart = document.createElement("span");
+  heart.className = "float-heart";
+  heart.textContent = ["♡", "♥", "❤"][Math.floor(Math.random() * 3)];
+  heart.style.left = Math.random() * 100 + "%";
+  heart.style.fontSize = (14 + Math.random() * 20) + "px";
+  heart.style.animationDuration = (7 + Math.random() * 8) + "s";
+
+  document.querySelector(".hero").appendChild(heart);
   setTimeout(() => heart.remove(), 16000);
 }
 
