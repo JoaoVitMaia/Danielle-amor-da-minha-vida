@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Um pedacinho do nosso amor ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --pink: #e88ca5;
+  --deep: #a74665;
+  --cream: #fff9f5;
+  --text: #633c49;
+  --soft: #fbe8ed;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+button { font: inherit; }
+
+h1, h2, h3, p { margin-top: 0; }
+
+h2 {
+  font: 400 clamp(2.1rem, 6vw, 3.6rem) 'Playfair Display', serif;
+}
+
+section {
+  padding: 95px 22px;
+  scroll-margin-top: 30px;
+}
+
+.container {
+  width: min(100%, 1050px);
+  margin: auto;
+}
+
+.eyebrow {
+  color: var(--deep);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: .72rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.center { text-align: center; }
+
+.subtitle {
+  max-width: 530px;
+  margin: 0 auto;
+  line-height: 1.9;
+  color: #906c77;
+}
+
+.btn {
+  border: 0;
+  border-radius: 40px;
+  padding: 15px 25px;
+  background: var(--deep);
+  color: white;
+  cursor: pointer;
+  transition: .25s;
+  box-shadow: 0 8px 24px #a7466522;
+}
+
+.btn:hover { transform: translateY(-3px); }
+
+.btn-outline {
+  color: var(--deep);
+  background: white;
+  border: 1px solid #edc4d0;
+}
+
+/* ABERTURA */
+
+.hero {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 22px;
+  background:
+    radial-gradient(ellipse at 15% 15%, #f6d6df 0, transparent 42%),
+    radial-gradient(ellipse at 85% 80%, #f4d9c9 0, transparent 40%),
+    var(--cream);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+}
+
+.hero .small {
+  letter-spacing: 4px;
+  font-size: .75rem;
+  text-transform: uppercase;
+  color: var(--deep);
+}
+
+.hero h1 {
+  font: 400 clamp(3.4rem, 11vw, 7rem)/1.12 'Great Vibes', cursive;
+  color: var(--deep);
+  margin: 26px 0;
+}
+
+.hero p {
+  max-width: 430px;
+  margin: 0 auto 28px;
+  line-height: 1.9;
+  color: #805967;
+}
+
+.hero-heart {
+  font-size: 2rem;
+  color: var(--pink);
+  animation: heartbeat 1.7s infinite;
+  margin-bottom: 10px;
+}
+
+.scroll-note {
+  margin-top: 40px;
+  font-size: .8rem;
+  opacity: .65;
+}
+
+.float-heart {
+  position: absolute;
+  bottom: -40px;
+  color: #d77d9b;
+  opacity: .35;
+  pointer-events: none;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  to { transform: translateY(-115vh) rotate(35deg); opacity: 0; }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.18); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.12); }
+}
+
+/* CONTADOR */
+
+.counter-section {
+  background: white;
+  text-align: center;
+}
+
+.counter-grid {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 35px 0 18px;
+}
+
+.counter-box {
+  background: var(--cream);
+  border: 1px solid #f5e0e6;
+  border-radius: 18px;
+  padding: 22px 15px;
+  min-width: 100px;
+}
+
+.counter-box strong {
+  display: block;
+  color: var(--deep);
+  font: 500 2.3rem 'Playfair Display', serif;
+}
+
+.counter-box span {
+  font-size: .75rem;
+  color: #987580;
+}
+
+.counter-caption {
+  font-size: .88rem;
+  color: #987580;
+}
+
+
+/* NOSSO CÉU ESTRELADO ✨ */
+.sky-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 50% 110%, #49366d 0%, transparent 58%),
+    linear-gradient(180deg, #10132f 0%, #1c2046 55%, #30254f 100%);
+  color: #fff7fb;
+}
+
+.sky-section .eyebrow { color: #f4b8d0; }
+
+.sky-section h2 { color: #fff1f7; }
+
+.sky-section .subtitle { color: #d4c6e8; }
+
+.sky-intro {
+  position: relative;
+  z-index: 2;
+}
+
+.sky {
+  position: relative;
+  width: 100%;
+  height: 410px;
+  margin: 30px auto 0;
+  overflow: hidden;
+  border: 1px solid #ffffff18;
+  border-radius: 24px;
+  background:
+    radial-gradient(ellipse at 50% 100%, #65518c44, transparent 65%),
+    #10132b;
+  box-shadow: inset 0 0 65px #080b20aa;
+}
+
+.sky-star {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: #fff4ca;
+  font-size: var(--size, 19px);
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  animation: twinkle var(--speed, 2.5s) ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 5px #f7d9ff99);
+  z-index: 1;
+}
+
+.sky-star:hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  filter: drop-shadow(0 0 12px #fff);
+}
+
+.sky-star.discovered {
+  color: #ffc2da;
+  filter: drop-shadow(0 0 9px #ff8fc1);
+}
+
+@keyframes twinkle {
+  from { opacity: .4; }
+  to { opacity: 1; }
+}
+
+.sky-moon {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 42px;
+  color: #fff1c7;
+  filter: drop-shadow(0 0 18px #fff0b955);
+  pointer-events: none;
+}
+
+.sky-message {
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+  min-height: 145px;
+  margin: 24px auto 0;
+  padding: 24px;
+  text-align: center;
+  background: #ffffff0c;
+  border: 1px solid #ffffff24;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.sky-message h3 {
+  color: #ffd2e2;
+  font: 400 2rem 'Great Vibes', cursive;
+  margin-bottom: 10px;
+}
+
+.sky-message p {
+  color: #f1e8f6;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.sky-progress {
+  margin-top: 16px;
+  color: #d4c6e8;
+  font-size: .82rem;
+}
+
+.sky-hint {
+  margin-top: 16px;
+  color: #c9b9dc;
+  font-size: .83rem;
+}
+
+@media (max-width: 650px) {
+  .sky { height: 390px; }
+  .sky-moon { right: 20px; top: 18px; }
+  .sky-message { padding: 20px 16px; }
+}
+
+/* ===== NOSSA LISTA DE SONHOS ===== */
+
+.dreams-section {
+  position: relative;
+  padding: 80px 20px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #fff7fb, #fff0f5, #fffafc);
+  color: #593b4a;
+}
+
+.dreams-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.dreams-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.dreams-heading .dreams-eyebrow {
+  color: #c36b91;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.dreams-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 5vw, 48px);
+  color: #9b496e;
+  margin: 12px 0;
+}
+
+.dreams-heading p {
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #876979;
+}
+
+.dream-progress {
+  max-width: 600px;
+  margin: 28px auto 45px;
+  padding: 22px;
+  border: 1px solid #f2d3e1;
+  background: rgba(255,255,255,.8);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(151, 73, 110, .07);
+}
+
+.dream-progress-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.dream-progress-top strong {
+  color: #a34e75;
+}
+
+.dream-progress-track {
+  height: 10px;
+  background: #f7e1eb;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.dream-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #e8a1c0, #b85d89);
+  border-radius: 99px;
+  transition: width .4s ease;
+}
+
+.dream-category {
+  margin: 45px 0 20px;
+}
+
+.dream-category-title {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  margin-bottom: 6px;
+  color: #9b496e;
+}
+
+.dream-category-subtitle {
+  color: #987889;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.dream-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.dream-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid #f0d8e3;
+  border-radius: 17px;
+  background: rgba(255,255,255,.88);
+  cursor: pointer;
+  transition: transform .2s, background .2s, border-color .2s;
+  min-height: 86px;
+}
+
+.dream-card:hover {
+  transform: translateY(-3px);
+  border-color: #dfa2bc;
+}
+
+.dream-card.is-done {
+  background: #fce8f0;
+  border-color: #d994b2;
+}
+
+.dream-checkbox {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #d79ab5;
+  border-radius: 7px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 14px;
+  margin-top: 1px;
+}
+
+.dream-card.is-done .dream-checkbox {
+  background: #c36b91;
+  border-color: #c36b91;
+}
+
+.dream-card-text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.dream-card.is-done .dream-card-text {
+  color: #a06d84;
+  text-decoration: line-through;
+  text-decoration-color: #d79ab5;
+}
+
+.dream-finale {
+  margin: 55px auto 0;
+  max-width: 700px;
+  text-align: center;
+  padding: 35px 24px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #f8dce8, #fff);
+  border: 1px solid #f0d0df;
+}
+
+.dream-finale .dream-heart {
+  font-size: 35px;
+}
+
+.dream-finale p {
+  font-family: Georgia, serif;
+  color: #95496b;
+  font-size: 21px;
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+.dream-finale small {
+  color: #a5768c;
+}
+
+@media (max-width: 600px) {
+  .dreams-section {
+    padding: 55px 16px;
+  }
+
+  .dream-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dream-progress-top {
+    font-size: 12px;
+  }
+}
+
+/* FOTOS */
+
+.gallery-section {
+  background: #fff9f5;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.polaroid {
+  background: white;
+  padding: 10px 10px 20px;
+  box-shadow: 0 8px 28px #733c4c12;
+  transform: rotate(var(--rotation, -2deg));
+  transition: transform .3s, box-shadow .3s;
+  border-radius: 3px;
+}
+
+.polaroid:nth-child(even) {
+  --rotation: 2deg;
+  margin-top: 22px;
+}
+
+.polaroid:hover {
+  transform: rotate(0) translateY(-8px);
+  box-shadow: 0 16px 32px #733c4c20;
+}
+
+.polaroid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/4.5;
+  object-fit: cover;
+  background: var(--soft);
+}
+
+.polaroid p {
+  text-align: center;
+  font: italic 1rem 'Playfair Display', serif;
+  margin: 17px 0 0;
+  color: #825565;
+}
+
+/* NOSSA HISTÓRIA */
+
+.timeline-section { background: white; }
+
+.timeline {
+  max-width: 670px;
+  margin: 50px auto 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 17px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #f2ccd8;
+}
+
+.moment {
+  position: relative;
+  padding: 0 0 38px 52px;
+}
+
+.moment::before {
+  content: '♥';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f7dce5;
+  color: var(--deep);
+  font-size: 12px;
+}
+
+
+/* QUIZ DO CASAL 💗 */
+.quiz-section {
+  background: #fff0f4;
+}
+
+.quiz-card {
+  max-width: 650px;
+  margin: 35px auto 0;
+  padding: clamp(22px, 5vw, 40px);
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 15px 45px #a7466512;
+}
+
+.quiz-progress {
+  height: 7px;
+  background: #f8e1e8;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #e88ca5, #a74665);
+  transition: width .4s;
+}
+
+.quiz-count {
+  color: #a74665;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.quiz-question {
+  font: 500 clamp(1.5rem, 5vw, 2.1rem)/1.4 'Playfair Display', serif;
+  margin: 18px 0 25px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 12px;
+}
+
+.quiz-option {
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+  border: 1px solid #f1dce3;
+  background: #fffafc;
+  border-radius: 14px;
+  color: #633c49;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.quiz-option:hover:not(:disabled) {
+  border-color: #d77d9b;
+  transform: translateY(-2px);
+}
+
+.quiz-option:disabled { cursor: default; }
+
+.quiz-option.correct {
+  background: #e9f8ed;
+  border-color: #8cc99b;
+}
+
+.quiz-option.wrong {
+  background: #fff0f0;
+  border-color: #e9a0a0;
+}
+
+.quiz-feedback {
+  min-height: 48px;
+  margin: 20px 0 10px;
+  color: #906575;
+  line-height: 1.7;
+}
+
+.quiz-result {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.quiz-result .big-heart {
+  font-size: 4rem;
+  color: #d77d9b;
+  animation: heartbeat 1.7s infinite;
+}
+
+.quiz-result h3 {
+  font: 400 2.5rem 'Great Vibes', cursive;
+  color: #a74665;
+}
+
+.quiz-result p {
+  line-height: 1.9;
+  color: #805967;
+}
+
+.quiz-hidden { display: none; }
+
+.moment time {
+  color: var(--deep);
+  font-size: .78rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.moment h3 {
+  font: 500 1.45rem 'Playfair Display', serif;
+  margin: 10px 0;
+}
+
+.moment p {
+  color: #8c6b77;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* VÍDEO E MÚSICA */
+
+.media-section {
+  background: #f9e9ed;
+}
+
+.video-frame {
+  max-width: 800px;
+  margin: 38px auto 0;
+  padding: 12px;
+  background: white;
+  box-shadow: 0 15px 40px #81455b15;
+  border-radius: 16px;
+}
+
+.video-frame video {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  border-radius: 9px;
+  background: #ead8de;
+}
+
+.music-card {
+  max-width: 520px;
+  margin: 40px auto 0;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-align: left;
+  box-shadow: 0 8px 30px #81455b10;
+}
+
+.album {
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f6cbd9, #e8a5bb);
+  border-radius: 14px;
+  font-size: 2rem;
+}
+
+.music-info { flex: 1; min-width: 0; }
+
+.music-info strong { display: block; margin-bottom: 6px; }
+
+.music-info p {
+  margin-bottom: 12px;
+  color: #9c7985;
+  font-size: .82rem;
+}
+
+.music-info audio { width: 100%; height: 36px; }
+
+/* CARTA */
+
+.letter-section { background: var(--cream); }
+
+.letter {
+  max-width: 690px;
+  margin: 40px auto 0;
+  padding: clamp(25px, 6vw, 55px);
+  background: white;
+  border: 1px solid #f1dce3;
+  box-shadow: 0 15px 45px #81455b0c;
+  border-radius: 5px;
+  position: relative;
+}
+
+.letter::before {
+  content: '♡';
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  color: #edc1cf;
+  font-size: 2rem;
+}
+
+.letter p {
+  font: 1.05rem/2 'Playfair Display', serif;
+  color: #79515f;
+  white-space: pre-line;
+}
+
+.letter .signature {
+  font: 400 2.6rem 'Great Vibes', cursive;
+  color: var(--deep);
+  text-align: right;
+  margin-top: 28px;
+}
+
+.letter-action { text-align: center; margin-top: 28px; }
+
+/* 20 MOTIVOS 💗 */
+.reasons-section {
+  background: #fff9f5;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.reason-card {
+  min-height: 145px;
+  padding: 18px 10px;
+  border: 1px solid #f2d5df;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #fff, #fff3f7);
+  color: #a74665;
+  cursor: pointer;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px) rotate(-1deg);
+  box-shadow: 0 12px 25px #a7466518;
+}
+
+.reason-card .reason-number {
+  display: block;
+  font: 400 2rem 'Great Vibes', cursive;
+  margin-bottom: 9px;
+}
+
+.reason-card .reason-label {
+  display: block;
+  font-size: .83rem;
+  line-height: 1.5;
+}
+
+.reason-card.opened {
+  background: #f9e2ea;
+  border-color: #e8a4b9;
+}
+
+.reason-card.opened .reason-number {
+  font-size: 1.5rem;
+}
+
+.reason-message {
+  max-width: 650px;
+  min-height: 105px;
+  margin: 25px auto 0;
+  padding: 24px;
+  text-align: center;
+  background: white;
+  border: 1px dashed #e7a5b9;
+  border-radius: 18px;
+  color: #805967;
+  line-height: 1.9;
+}
+
+.reason-message strong {
+  display: block;
+  font: 400 1.8rem 'Great Vibes', cursive;
+  color: #a74665;
+  margin-bottom: 8px;
+}
+
+.reason-counter {
+  margin-top: 18px;
+  text-align: center;
+  font-size: .85rem;
+  color: #a74665;
+}
+
+@media (max-width: 650px) {
+  .reasons-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .reason-card { min-height: 125px; }
+}
+
+/* FINAL */
+
+.final-section {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: linear-gradient(145deg, #f4d4df, #fff4ed);
+}
+
+.final-section h2 { color: var(--deep); }
+
+.final-heart {
+  font-size: 3rem;
+  animation: heartbeat 1.7s infinite;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  background: #fff9f5;
+  padding: 25px;
+  font-size: .8rem;
+  color: #a17c89;
+}
+
+/* REVELAÇÃO */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .8s, transform .8s;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 650px) {
+  section { padding: 70px 20px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+  .polaroid { padding: 7px 7px 14px; }
+  .polaroid p { font-size: .86rem; }
+  .counter-box { min-width: 72px; padding: 16px 10px; }
+  .counter-box strong { font-size: 1.8rem; }
+  .music-card { padding: 16px; gap: 12px; }
+  .album { width: 55px; height: 55px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ABERTURA: personalize os textos aqui -->
+<header class="hero" id="inicio">
+  <div class="hero-content">
+    <div class="hero-heart">♡</div>
+    <div class="small">Um presente feito com amor</div>
+    <h1>Para o amor da minha vida</h1>
+    <p>
+      Se eu pudesse guardar meus momentos favoritos em algum lugar,
+      guardaria todos aqueles em que estou com você.
+      Esse cantinho é só nosso. ❤️
+    </p>
+    <button class="btn" id="openBtn">Tenho uma surpresa pra você ♡</button>
+    <div class="scroll-note">feito com carinho, especialmente para você ↓</div>
+  </div>
+</header>
+
+<main id="conteudo" hidden>
+
+<!-- CONTADOR: altere a data para o dia em que começaram a namorar -->
+<section class="counter-section">
+  <div class="container reveal">
+    <div class="eyebrow">Desde que nossas histórias se encontraram</div>
+    <h2>O meu tempo favorito é com você</h2>
+    <p class="subtitle">
+      E pensar que tudo isso começou em um dia que se tornou
+      um dos mais especiais da minha vida.
+    </p>
+
+    <div class="counter-grid">
+      <div class="counter-box"><strong id="days">0</strong><span>dias</span></div>
+      <div class="counter-box"><strong id="hours">00</strong><span>horas</span></div>
+      <div class="counter-box"><strong id="minutes">00</strong><span>minutos</span></div>
+      <div class="counter-box"><strong id="seconds">00</strong><span>segundos</span></div>
+    </div>
+    <p class="counter-caption">e eu escolheria você em cada um deles.</p>
+  </div>
+</section>
+
+<!-- GALERIA: substitua as imagens pelos arquivos da pasta fotos -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="center reveal">
+      <div class="eyebrow">Pequenos pedaços da eternidade</div>
+      <h2>Meu álbum favorito</h2>
+      <p class="subtitle">
+        Algumas fotos, milhares de lembranças e um sentimento
+        que nunca cabe inteirinho em uma fotografia.
+      </p>
+    </div>
+
+    <div class="gallery">
+      <article class="polaroid reveal">
+        <img src="fotos/foto1.jpg" alt="Nossa primeira lembrança" loading="lazy">
+        <p>Um dos meus dias favoritos ♡</p>
+      </article>
+      <article class="polaroid reveal">
+        <img src="fotos/foto2.jpg" alt="Nós dois juntos" loading="lazy">
+        <p>Meu lugar é com você</p>
+      </article>
+      <article class="polaroid reveal">
+        <img src="fotos/foto3.jpg" alt="Uma lembrança especial" loading="lazy">
+        <p>Olha a gente, meu amor!</p>
+      </article>
+      <article class="polaroid reveal">
+        <img src="fotos/foto4.jpg" alt="Mais um momento nosso" loading="lazy">
+        <p>Eu amo esse sorriso</p>
+      </article>
+      <article class="polaroid reveal">
+        <img src="fotos/foto5.jpg" alt="Um momento feliz" loading="lazy">
+        <p>Com você tudo fica melhor</p>
+      </article>
+      <article class="polaroid reveal">
+        <img src="fotos/foto6.jpg" alt="Uma lembrança que guardo" loading="lazy">
+        <p>Que venham mil outras ♡</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA: troque as datas e os acontecimentos -->
+<section class="timeline-section">
+  <div class="container">
+    <div class="center reveal">
+      <div class="eyebrow">Era para ser você</div>
+      <h2>A nossa história</h2>
+      <p class="subtitle">
+        Se alguém me perguntasse quais momentos eu viveria de novo,
+        eu começaria por estes.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <article class="moment reveal">
+        <time>O COMEÇO</time>
+        <h3>Quando tudo começou ♡</h3>
+        <p>Quem diria que uma ída ao seu carro nos levaria até aqui, mas foi ali, quando eu olhei naqueles olhos lindos que eu soube o que eu queria</p>
+      </article>
+      <article class="moment reveal">
+        <time>UMA MEMÓRIA ESPECIAL</time>
+        <h3>O dia que ficou guardado</h3>
+        <p>Tem momentos que parecem simples para o mundo inteiro, mas que significam tudo para mim porque vivi ao seu lado. Você sabe rsrsrs</p>
+      </article>
+      <article class="moment reveal">
+        <time>ATÉ HOJE</time>
+        <h3>E eu continuo me apaixonando</h3>
+        <p>Por cada detalhe seu, pelas nossas conversas, pelas risadas (Principalmente a sua) e até pelas pequenas coisas que só nós entendemos.</p>
+      </article>
+      <article class="moment reveal">
+        <time>O QUE AINDA VEM</time>
+        <h3>Ainda temos tanto para viver</h3>
+        <p>Novos lugares, novas fotos, novas histórias e muitos motivos para agradecer por termos um ao outro.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VÍDEO E MÚSICA -->
+<section class="media-section">
+  <div class="container">
+    <div class="center reveal">
+      <div class="eyebrow">Dá o play e fica aqui comigo</div>
+      <h2>Um pouquinho do nosso mundo</h2>
+      <p class="subtitle">
+        Porque algumas lembranças são tão bonitas que merecem
+        ser vistas e ouvidas de novo.
+      </p>
+    </div>
+
+    <div class="video-frame reveal">
+      <video controls playsinline preload="metadata" poster="fotos/foto1.jpg">
+        <source src="video/nosso-video.mp4" type="video/mp4">
+        Seu navegador não conseguiu reproduzir este vídeo.
+      </video>
+    </div>
+
+    <div class="music-card reveal">
+      <div class="album">♫</div>
+      <div class="music-info">
+        <strong>A nossa música</strong>
+        <p>Aperte o play e lembre de nós dois ♡</p>
+        <audio controls preload="metadata">
+          <source src="musica/nossa-musica.mp3" type="audio/mpeg">
+          Seu navegador não conseguiu reproduzir esta música.
+        </audio>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 20 MOTIVOS PELOS QUAIS EU TE AMO -->
+<section class="reasons-section" id="motivos">
+  <div class="container">
+    <div class="center reveal">
+      <div class="eyebrow">Vinte pedacinhos do meu coração</div>
+      <h2>20 motivos pelos quais eu te amo</h2>
+      <p class="subtitle">
+        Cada cartão guarda um motivo. Abra todos eles,
+        meu amor. E saiba que ainda existem infinitos outros. ♡
+      </p>
+    </div>
+
+    <div class="reasons-grid" id="reasonsGrid"></div>
+
+    <div class="reason-message" id="reasonMessage" aria-live="polite">
+      <strong>Uma coisinha pra você...</strong>
+      Clique em qualquer cartão para descobrir um motivo. 💌
+    </div>
+
+    <div class="reason-counter" id="reasonCounter">
+      Você descobriu 0 de 20 motivos ♡
+    </div>
+  </div>
+</section>
+
+
+<!-- NOSSO PRÓPRIO CÉU ESTRELADO -->
+<section class="sky-section" id="nosso-ceu">
+  <div class="container">
+    <div class="center sky-intro reveal">
+      <div class="eyebrow">Em algum lugar do universo</div>
+      <h2>Nosso próprio céu estrelado</h2>
+      <p class="subtitle">
+        Dizem que existem bilhões de estrelas no universo.
+        Eu só preciso olhar para uma pessoa para me sentir
+        no lugar mais bonito dele: você.
+      </p>
+      <p style="color:#f5c7da;font-family:'Great Vibes',cursive;font-size:1.8rem;margin-top:18px">
+        Cada estrelinha guarda um pedacinho do que sinto por você...
+      </p>
+    </div>
+
+    <div class="sky reveal" id="loveSky">
+      <div class="sky-moon">☾</div>
+      <!-- As estrelas serão criadas pelo JavaScript -->
+    </div>
+
+    <div class="sky-message reveal" aria-live="polite">
+      <h3 id="skyMessageTitle">Uma estrela para você ♡</h3>
+      <p id="skyMessageText">
+        Escolha uma estrela no céu e descubra a mensagem
+        que ela guarda especialmente para você.
+      </p>
+      <div class="sky-progress" id="skyProgress">
+        0 de 10 estrelas descobertas ✨
+      </div>
+    </div>
+
+    <p class="center sky-hint">
+      Psst... tente encontrar todas as estrelinhas. 💫
+    </p>
+  </div>
+</section>
+
+
+
+<!-- NOSSA LISTA DE SONHOS -->
+<section class="dreams-section" id="nossos-sonhos">
+  <div class="dreams-container">
+
+    <header class="dreams-heading">
+      <div class="dreams-eyebrow">Nosso futuro, nossa história</div>
+      <h2>O mundo é nosso, meu amor ✈️</h2>
+      <p>
+        Ainda existem tantos lugares para conhecer, tantas histórias
+        para viver e tantos momentos para guardar. Quero descobrir
+        esse mundão inteiro ao seu lado.
+      </p>
+    </header>
+
+    <div class="dream-progress">
+      <div class="dream-progress-top">
+        <strong id="dream-progress-label">Nossa aventura está começando 💗</strong>
+        <span id="dream-progress-count">0 de 0 sonhos</span>
+      </div>
+      <div
+        class="dream-progress-track"
+        role="progressbar"
+        aria-label="Progresso dos nossos sonhos"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+        id="dream-progress-bar"
+      >
+        <div class="dream-progress-fill" id="dream-progress-fill"></div>
+      </div>
+    </div>
+
+    <div class="dream-category">
+      <h3 class="dream-category-title">🇧🇷 Nosso Brasil inteiro</h3>
+      <p class="dream-category-subtitle">
+        De praias paradisíacas a cidades cheias de história.
+        Quero conhecer cada cantinho desse país com você.
+      </p>
+      <div class="dream-grid" id="dreams-brasil"></div>
+    </div>
+
+    <div class="dream-category">
+      <h3 class="dream-category-title">🌎 Nosso mundinho lá fora</h3>
+      <p class="dream-category-subtitle">
+        Novos países, culturas diferentes e memórias que vão
+        ficar com a gente para sempre.
+      </p>
+      <div class="dream-grid" id="dreams-internacional"></div>
+    </div>
+
+    <div class="dream-category">
+      <h3 class="dream-category-title">💗 A vida que queremos viver</h3>
+      <p class="dream-category-subtitle">
+        Porque os melhores sonhos não dependem de um destino.
+      </p>
+      <div class="dream-grid" id="dreams-vida"></div>
+    </div>
+
+    <div class="dream-finale">
+      <div class="dream-heart">♡</div>
+      <p>
+        Não quero apenas conhecer o mundo.
+        Quero conhecer o mundo com você.
+        <br />
+        <strong>Essa é só a primeira página da nossa história.</strong>
+      </p>
+      <small>Você, eu e todos os lugares que ainda vamos chamar de lembrança.</small>
+    </div>
+
+  </div>
+</section>
+<!-- FIM DA LISTA DE SONHOS -->
+
+
+<!-- CARTA -->
+<section class="letter-section">
+  <div class="container">
+    <div class="center reveal">
+      <div class="eyebrow">Uma coisa que eu precisava te dizer</div>
+      <h2>Abre quando quiser um abraço meu</h2>
+      <p class="subtitle">
+        Tem coisas que eu sinto todos os dias e quero que você
+        possa ler sempre que precisar lembrar delas.
+      </p>
+    </div>
+
+    <div class="letter reveal">
+      <p>Meu amor,
+
+Eu fiz esse cantinho porque queria te dar algo diferente. Algo que você pudesse abrir e sentir um pouquinho do quanto é amada por mim.
+
+Às vezes eu fico pensando em como é incrível ter encontrado você. Entre tantas pessoas e tantos caminhos possíveis, a vida me trouxe justamente você, e isso é uma das coisas pelas quais eu mais sou grato.
+
+Eu amo nossos momentos juntos, nossas risadas, nossas conversas e todas aquelas pequenas coisas que talvez pareçam bobas, mas que se tornam especiais só porque são com você.
+
+Não prometo que todos os dias serão perfeitos, mas quero continuar construindo uma história bonita com você. Quero conhecer novos lugares ao seu lado, criar memórias que ainda nem imaginamos e continuar descobrindo novos motivos para sorrir quando olho para você.
+
+Se algum dia você esquecer o quanto é especial, volta aqui. Lembra de cada foto, de cada momento e do carinho que coloquei em cada pedacinho deste site.
+
+Você é muito importante para mim. Obrigado por fazer parte da minha vida.
+
+E, se eu pudesse voltar ao começo de tudo, sabendo de todas as coisas lindas que ainda viveríamos, eu escolheria conhecer você outra vez.
+
+Eu te amo. ♡</p>
+
+      <div class="signature">Com todo o meu amor ♡</div>
+    </div>
+  </div>
+</section>
+
+<!-- ENCERRAMENTO -->
+<section class="final-section">
+  <div class="container reveal">
+    <div class="final-heart">♥</div>
+    <h2>Minha parte favorita da vida é ter você nela.</h2>
+    <p class="subtitle">
+      Que esse seja só mais um dos infinitos capítulos
+      da nossa história.
+    </p>
+    <p style="margin-top:30px;font-family:'Great Vibes',cursive;font-size:2.5rem;color:#a74665">
+      Eu e você. Sempre nós. ♡
+    </p>
+    <button class="btn btn-outline" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      Voltar ao começo ↑
+    </button>
+  </div>
+</section>
+
+<footer>
+  Feito à mão, com amor e pensando em você. ♡
+</footer>
+
+</main>
+
+<script>
+// ===================================================
+// PERSONALIZE A DATA DO INÍCIO DO RELACIONAMENTO
+// Formato: ano, mês (janeiro = 0), dia, hora, minuto
+// Exemplo: 14 de fevereiro de 2025, às 00:00
+// ===================================================
+
+
+/* ===== FUNCIONAMENTO DA LISTA DE SONHOS ===== */
+
+const listasDeSonhos = {
+  brasil: [
+    "Ver o pôr do sol nas praias do Rio de Janeiro",
+    "Conhecer as águas cristalinas de Maragogi",
+    "Explorar os Lençóis Maranhenses",
+    "Assistir ao nascer do sol em Jericoacoara",
+    "Conhecer Fernando de Noronha",
+    "Passear pelas ruas históricas de Ouro Preto",
+    "Viajar para Gramado no frio",
+    "Conhecer as Cataratas do Iguaçu",
+    "Ver o céu estrelado no Pantanal",
+    "Explorar a Chapada dos Veadeiros",
+    "Conhecer Salvador e sua cultura",
+    "Fazer uma viagem de carro pelo litoral",
+    "Passar dias em uma pousada nas montanhas",
+    "Conhecer a Amazônia e seus rios",
+    "Fazer uma viagem sem roteiro, só nós dois"
+  ],
+
+  internacional: [
+    "Ver a Torre Eiffel em Paris",
+    "Conhecer as ruas e os cafés da Itália",
+    "Assistir ao pôr do sol em Santorini",
+    "Conhecer o Japão na época das cerejeiras",
+    "Passear por Nova York à noite",
+    "Conhecer Portugal e suas cidades históricas",
+    "Ver a aurora boreal",
+    "Conhecer a neve juntinhos",
+    "Fazer uma viagem pela Argentina",
+    "Conhecer a Suíça e seus Alpes",
+    "Visitar Londres",
+    "Conhecer a Tailândia e suas praias",
+    "Fazer nossa primeira viagem internacional",
+    "Conhecer vários países em uma mesma viagem"
+  ],
+
+  vida: [
+    "Montar nosso próprio cantinho",
+    "Ver muitos pores do sol de mãos dadas",
+    "Fazer uma viagem surpresa um para o outro",
+    "Criar um álbum com todas as nossas viagens",
+    "Comemorar muitos aniversários juntos",
+    "Criar uma tradição só nossa em cada viagem",
+    "Tirar uma foto especial em cada destino",
+    "Fazer uma viagem só com uma mochila",
+    "Realizar um grande sonho um do outro",
+    "Olhar para trás e lembrar de tudo que vivemos"
+  ]
+};
+
+const chaveSonhos = "nossosSonhosDoCasal_v1";
+
+let sonhosConcluidos = {};
+
+try {
+  sonhosConcluidos = JSON.parse(
+    localStorage.getItem(chaveSonhos) || "{}"
+  ) || {};
+} catch (erro) {
+  sonhosConcluidos = {};
+}
+
+function criarCartoesDeSonhos() {
+  Object.entries(listasDeSonhos).forEach(([categoria, sonhos]) => {
+    const container = document.getElementById(
+      `dreams-${categoria}`
+    );
+
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    sonhos.forEach((sonho, indice) => {
+      const id = `${categoria}-${indice}`;
+      const concluido = sonhosConcluidos[id] === true;
+
+      const cartao = document.createElement("button");
+      cartao.type = "button";
+      cartao.className = "dream-card" +
+        (concluido ? " is-done" : "");
+
+      cartao.setAttribute("aria-pressed", String(concluido));
+
+      const caixa = document.createElement("span");
+      caixa.className = "dream-checkbox";
+      caixa.setAttribute("aria-hidden", "true");
+      caixa.textContent = concluido ? "✓" : "";
+
+      const texto = document.createElement("span");
+      texto.className = "dream-card-text";
+      texto.textContent = sonho;
+
+      cartao.append(caixa, texto);
+
+      cartao.addEventListener("click", () => {
+        const vaiConcluir = !sonhosConcluidos[id];
+
+        sonhosConcluidos[id] = vaiConcluir;
+
+        if (!vaiConcluir) {
+          delete sonhosConcluidos[id];
+        }
+
+        try {
+          localStorage.setItem(
+            chaveSonhos,
+            JSON.stringify(sonhosConcluidos)
+          );
+        } catch (erro) {
+          console.warn("Não foi possível salvar os sonhos neste navegador.");
+        }
+
+        cartao.classList.toggle("is-done", vaiConcluir);
+        cartao.setAttribute("aria-pressed", String(vaiConcluir));
+        caixa.textContent = vaiConcluir ? "✓" : "";
+
+        atualizarProgressoDosSonhos();
+      });
+
+      container.appendChild(cartao);
+    });
+  });
+
+  atualizarProgressoDosSonhos();
+}
+
+function atualizarProgressoDosSonhos() {
+  const total = Object.values(listasDeSonhos)
+    .reduce((soma, sonhos) => soma + sonhos.length, 0);
+
+  const concluidos = Object.values(sonhosConcluidos)
+    .filter(Boolean).length;
+
+  const porcentagem = total > 0
+    ? Math.round((concluidos / total) * 100)
+    : 0;
+
+  const contador = document.getElementById("dream-progress-count");
+  const barra = document.getElementById("dream-progress-fill");
+  const progresso = document.getElementById("dream-progress-bar");
+  const mensagem = document.getElementById("dream-progress-label");
+
+  if (contador) {
+    contador.textContent = `${concluidos} de ${total} sonhos`;
+  }
+
+  if (barra) {
+    barra.style.width = `${porcentagem}%`;
+  }
+
+  if (progresso) {
+    progresso.setAttribute("aria-valuenow", String(porcentagem));
+  }
+
+  if (mensagem) {
+    if (porcentagem === 100) {
+      mensagem.textContent = "Conseguimos! Nosso mundo está cheio de memórias 💖";
+    } else if (concluidos === 0) {
+      mensagem.textContent = "Nossa aventura está começando 💗";
+    } else {
+      mensagem.textContent = "Cada sonho realizado, uma história para contar ✨";
+    }
+  }
+}
+
+criarCartoesDeSonhos();
+
+/* ==========================================
+   20 MOTIVOS PELOS QUAIS EU TE AMO 💕
+   Edite os textos para ficarem com a cara de vocês.
+========================================== */
+
+const motivosAmor = [
+  "Porque seu sorriso consegue melhorar o meu dia.",
+  "Porque amo o jeito que você me olha.",
+  "Porque posso ser eu mesmo ao seu lado.",
+  "Porque até os momentos simples ficam especiais com você.",
+  "Porque adoro ouvir você contando as coisas do seu dia.",
+  "Porque você me faz rir quando eu menos espero.",
+  "Porque amo o seu jeitinho único de ser.",
+  "Porque gosto de cuidar de você.",
+  "Porque você me inspira a ser alguém melhor.",
+  "Porque amo nossos abraços.",
+  "Porque adoro nossas conversas sem hora para acabar.",
+  "Porque você faz parte das minhas lembranças favoritas.",
+  "Porque amo as nossas brincadeiras e piadas internas.",
+  "Porque quero conhecer o mundo ao seu lado.",
+  "Porque sinto saudade até pouco depois de me despedir.",
+  "Porque amo os pequenos detalhes que fazem você ser você.",
+  "Porque quero continuar criando memórias com você.",
+  "Porque posso imaginar tantos capítulos bonitos da nossa história.",
+  "Porque, mesmo nos dias difíceis, quero continuar ao seu lado.",
+  "Porque, entre tantas possibilidades, eu escolheria você de novo."
+];
+
+const reasonsGrid = document.getElementById("reasonsGrid");
+const reasonMessage = document.getElementById("reasonMessage");
+const reasonCounter = document.getElementById("reasonCounter");
+const motivosDescobertos = new Set();
+
+motivosAmor.forEach((motivo, index) => {
+  const card = document.createElement("button");
+  card.type = "button";
+  card.className = "reason-card";
+  card.setAttribute("aria-label", `Descobrir motivo ${index + 1}`);
+
+  card.innerHTML = `
+    <span class="reason-number">${String(index + 1).padStart(2, "0")}</span>
+    <span class="reason-label">Toque para descobrir ♡</span>
+  `;
+
+  card.addEventListener("click", () => {
+    motivosDescobertos.add(index);
+    card.classList.add("opened");
+    card.querySelector(".reason-number").textContent = "♥";
+    card.querySelector(".reason-label").textContent = "Motivo descoberto!";
+
+    reasonMessage.replaceChildren();
+
+    const titulo = document.createElement("strong");
+    titulo.textContent = `Motivo número ${index + 1} ♡`;
+
+    const texto = document.createElement("span");
+    texto.textContent = motivo;
+
+    reasonMessage.append(titulo, texto);
+
+    reasonCounter.textContent =
+      `Você descobriu ${motivosDescobertos.size} de ${motivosAmor.length} motivos ♡`;
+
+    if (motivosDescobertos.size === motivosAmor.length) {
+      const final = document.createElement("p");
+      final.textContent =
+        "Você encontrou todos os motivos... mas meu amor por você não cabe em apenas vinte. ❤️";
+      final.style.marginTop = "18px";
+      reasonMessage.appendChild(final);
+    }
+  });
+
+  reasonsGrid.appendChild(card);
+});
+
+
+/* ==========================================
+   NOSSO PRÓPRIO CÉU ESTRELADO ✨
+========================================== */
+
+const mensagensEstrelas = [
+  {
+    titulo: "Você ilumina meus dias",
+    texto: "Assim como essa estrela ilumina o céu, você ilumina a minha vida."
+  },
+  {
+    titulo: "Meu lugar favorito",
+    texto: "Não importa onde eu esteja. Se você estiver comigo, já estou no meu lugar favorito."
+  },
+  {
+    titulo: "Seu sorriso",
+    texto: "Se eu pudesse guardar uma imagem para sempre, seria o seu sorriso."
+  },
+  {
+    titulo: "Minha escolha",
+    texto: "Entre todos os caminhos que a vida poderia me oferecer, sou muito feliz por ter encontrado o seu."
+  },
+  {
+    titulo: "Nossas lembranças",
+    texto: "Quero que um dia a gente olhe para trás e sorria lembrando de tudo o que vivemos."
+  },
+  {
+    titulo: "Meu carinho",
+    texto: "Mesmo quando não consigo encontrar as palavras certas, quero que você saiba o quanto é importante para mim."
+  },
+  {
+    titulo: "Nosso futuro",
+    texto: "Ainda temos tantos lugares para conhecer, fotos para tirar e histórias para contar."
+  },
+  {
+    titulo: "Meu abraço",
+    texto: "Se algum dia o mundo parecer complicado, espero que você encontre conforto no meu abraço."
+  },
+  {
+    titulo: "Só nós dois",
+    texto: "Amo as pequenas coisas que só nós entendemos. São elas que tornam a nossa história tão nossa."
+  },
+  {
+    titulo: "Uma promessa",
+    texto: "Quero continuar escolhendo você, cultivando nosso carinho e construindo novas memórias ao seu lado. Eu te amo. ❤️"
+  }
+];
+
+const loveSky = document.getElementById("loveSky");
+const skyMessageTitle = document.getElementById("skyMessageTitle");
+const skyMessageText = document.getElementById("skyMessageText");
+const skyProgress = document.getElementById("skyProgress");
+
+const estrelasDescobertas = new Set();
+
+// Posições definidas para as estrelas ficarem bem distribuídas
+const posicoesEstrelas = [
+  [10, 20], [24, 35], [38, 17], [54, 29], [70, 18],
+  [86, 33], [17, 57], [34, 72], [51, 52], [68, 73]
+];
+
+posicoesEstrelas.forEach((posicao, index) => {
+  const estrela = document.createElement("button");
+  estrela.type = "button";
+  estrela.className = "sky-star";
+  estrela.textContent = index % 3 === 0 ? "✦" : "★";
+
+  estrela.style.setProperty("--x", posicao[0] + "%");
+  estrela.style.setProperty("--y", posicao[1] + "%");
+  estrela.style.setProperty("--size", (16 + (index % 3) * 5) + "px");
+  estrela.style.setProperty("--speed", (1.5 + (index % 4) * 0.6) + "s");
+
+  estrela.setAttribute("aria-label", `Descobrir estrela ${index + 1}`);
+
+  estrela.addEventListener("click", () => {
+    const mensagem = mensagensEstrelas[index];
+
+    estrelasDescobertas.add(index);
+    estrela.classList.add("discovered");
+    estrela.textContent = "♥";
+    estrela.setAttribute("aria-label", `Estrela ${index + 1} descoberta`);
+
+    skyMessageTitle.textContent = mensagem.titulo;
+    skyMessageText.textContent = mensagem.texto;
+
+    skyProgress.textContent =
+      `${estrelasDescobertas.size} de ${mensagensEstrelas.length} estrelas descobertas ✨`;
+
+    if (estrelasDescobertas.size === mensagensEstrelas.length) {
+      skyMessageTitle.textContent = "Você descobriu todo o nosso céu! 💖";
+      skyMessageText.textContent =
+        "Agora você conhece cada mensagem que escondi entre as estrelas. " +
+        "Mas existe uma coisa que nenhuma delas consegue explicar por inteiro: " +
+        "o quanto eu amo ter você na minha vida.";
+    }
+  });
+
+  loveSky.appendChild(estrela);
+});
+
+
+
+
+const inicioNamoro = new Date(2026, 3, 9, 0, 0, 0);
+
+const openBtn = document.getElementById('openBtn');
+const conteudo = document.getElementById('conteudo');
+
+openBtn.addEventListener('click', () => {
+  conteudo.hidden = false;
+  openBtn.textContent = 'Agora é só nosso ♡';
+  openBtn.disabled = true;
+
+  conteudo.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  setTimeout(() => {
+    document.getElementById('conteudo').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+
+
+function atualizarContador() {
+  const agora = new Date();
+  const diferenca = Math.max(0, agora - inicioNamoro);
+
+  const totalSegundos = Math.floor(diferenca / 1000);
+  const dias = Math.floor(totalSegundos / 86400);
+  const horas = Math.floor((totalSegundos % 86400) / 3600);
+  const minutos = Math.floor((totalSegundos % 3600) / 60);
+  const segundos = totalSegundos % 60;
+
+  document.getElementById('days').textContent = dias;
+  document.getElementById('hours').textContent = String(horas).padStart(2, '0');
+  document.getElementById('minutes').textContent = String(minutos).padStart(2, '0');
+  document.getElementById('seconds').textContent = String(segundos).padStart(2, '0');
+}
+
+atualizarContador();
+setInterval(atualizarContador, 1000);
+
+// Animações conforme os elementos aparecem na tela
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+// Corações flutuando no fundo da abertura
+function criarCoracao() {
+  const heart = document.createElement('span');
+  heart.className = 'float-heart';
+  heart.textContent = ['♡', '♥', '❤'][Math.floor(Math.random() * 3)];
+  heart.style.left = Math.random() * 100 + '%';
+  heart.style.fontSize = (14 + Math.random() * 20) + 'px';
+  heart.style.animationDuration = (7 + Math.random() * 8) + 's';
+
+  document.querySelector('.hero').appendChild(heart);
+  setTimeout(() => heart.remove(), 16000);
+}
+
+setInterval(criarCoracao, 850);
+</script>
+
+</body>
+</html>
